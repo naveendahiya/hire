@@ -37,5 +37,33 @@
            timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="com.datasolution.hire.domain.AccessLevel"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Activity"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.ActivityType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Attachment"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CalendarEvent"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CalendarEventType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Candidate"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>
