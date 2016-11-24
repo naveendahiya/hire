@@ -1,0 +1,98 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCandidateJoborderLabel">Create or edit a Candidate Joborder</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.candidateJoborder.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.candidateJoborder.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_candidateJoborderId">Candidate Joborder Id</label>
+            <input type="number" class="form-control" name="candidateJoborderId" id="field_candidateJoborderId"
+                    ng-model="vm.candidateJoborder.candidateJoborderId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_candidateId">Candidate Id</label>
+            <input type="number" class="form-control" name="candidateId" id="field_candidateId"
+                    ng-model="vm.candidateJoborder.candidateId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_joborderId">Joborder Id</label>
+            <input type="number" class="form-control" name="joborderId" id="field_joborderId"
+                    ng-model="vm.candidateJoborder.joborderId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.candidateJoborder.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_status">Status</label>
+            <input type="number" class="form-control" name="status" id="field_status"
+                    ng-model="vm.candidateJoborder.status"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateSubmitted">Date Submitted</label>
+                <div class="input-group">
+                    <input id="field_dateSubmitted" type="text" class="form-control" name="dateSubmitted" datetime-picker="{{dateformat}}" ng-model="vm.candidateJoborder.dateSubmitted" is-open="vm.datePickerOpenStatus.dateSubmitted"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateSubmitted')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateCreated">Date Created</label>
+                <div class="input-group">
+                    <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" datetime-picker="{{dateformat}}" ng-model="vm.candidateJoborder.dateCreated" is-open="vm.datePickerOpenStatus.dateCreated"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateCreated')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateModified">Date Modified</label>
+                <div class="input-group">
+                    <input id="field_dateModified" type="text" class="form-control" name="dateModified" datetime-picker="{{dateformat}}" ng-model="vm.candidateJoborder.dateModified" is-open="vm.datePickerOpenStatus.dateModified"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateModified')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ratingValue">Rating Value</label>
+            <input type="number" class="form-control" name="ratingValue" id="field_ratingValue"
+                    ng-model="vm.candidateJoborder.ratingValue"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_addedBy">Added By</label>
+            <input type="number" class="form-control" name="addedBy" id="field_addedBy"
+                    ng-model="vm.candidateJoborder.addedBy"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

@@ -1,103 +1,55 @@
-entity AccessLevel{
-	accessLevelId Integer
-	shortDescription String
-	longDescription String
-}
-entity Activity{
-	activityId Integer
-	dataItemId Integer
-	dataItemType Integer
-	joborderId Integer
-	siteId Integer
-	enteredBy Integer
-	dateCreated ZonedDateTime
-	type Integer
-	notes String
-	dateModified ZonedDateTime
-}
-entity ActivityType{
-	activityTypeId Integer
-	shortDescription String
-}
-entity Attachment{
-	attachmentId Integer
-	dataItemId Integer
-	dataItemType Integer
-	siteId Integer
+entity CareerPortalQuestionnaire{
+	careerPortalQuestionnaireId Integer
 	title String
-	originalFilename String
-	storedFilename String
-	contentType String
-	resume Integer
-	text String
-	dateCreated ZonedDateTime
-	dateModified ZonedDateTime
-	profileImage Integer
-	directoryName String
-	md5Sum String
-	fileSizeKb Integer
-	md5SumText String
-}
-entity CalendarEvent{
-	calendarEventId Integer
-	type Integer
-	date ZonedDateTime
-	title String
-	allDay Integer
-	dataItemId Integer
-	dataItemType Integer
-	enteredBy Integer
-	dateCreated ZonedDateTime
-	dateModified ZonedDateTime
 	siteId Integer
-	joborderId Integer
 	description String
-	duration Integer
-	reminderEnabled Integer
-	reminderEmail String
-	reminderTime Integer
-	publicV Integer
+	isActive Boolean
 }
-entity CalendarEventType{
-	calendarEventTypeId Integer
-	shortDescription String
-	iconImage String
-}
-entity Candidate{
-	candidateId Integer
+entity CareerPortalQuestionnaireAnswer{
+	careerPortalQuestionnaireAnswerId Integer
+	careerPortalQuestionnaireQuestionId Integer
+	careerPortalQuestionnaireId Integer
+	text String
+	actionSource String
+	actionNotes String
+	actionIsHot Boolean
+	actionIsActive Boolean
+	actionCanRelocate Boolean
+	actionKeySkills String
+	position Integer
 	siteId Integer
-	lastName String
-	firstName String
-	middleName String
-	phoneHome String
-	phoneCell String
-	phoneWork String
-	address String
-	city String
-	state String
-	zip String
-	source String
-	dateAvailable ZonedDateTime
-	canRelocate Integer
-	notes String
-	keySkills String
-	currentEmployer String
-	enteredBy Integer
-	owner Integer
-	dateCreated ZonedDateTime
-	dateModified ZonedDateTime
-	email1 String
-	email2 String
-	webSite String
-	importedId Integer
-	isHot Integer
-	eeoEthnicTypeId Integer
-	eeoVeteranTypeId Integer
-	eeoDisabilityStatus String
-	eeoGender String
-	desiredPay String
-	currentPay String
-	isActive Integer
-	isAdminHidden Integer
-	bestTimeToCall String
+}
+entity CareerPortalQuestionnaireHistory{
+	careerPortalQuestionnaireHistoryId Integer
+	siteId Integer
+	candidateId Integer
+	question String
+	answer String
+	questionnaireTitle String
+	questionnaireDescription String
+	date ZonedDateTime
+}
+entity CareerPortalQuestionnaireQuestion{
+	careerPortalQuestionnaireQuestionId Integer
+	careerPortalQuestionnaireId Integer
+	text String
+	minimumLength Integer
+	maximumLength Integer
+	requir Boolean
+	position Integer
+	siteId Integer
+	type Integer
+}
+entity CareerPortalTemplate{
+	careerPortalTemplateId Integer
+	careerPortalName String
+	setting String
+	value String
+}
+entity CareerPortalTemplateSite{
+	careerPortalTemplateId Integer
+	careerPortalName String
+	siteId Integer
+	setting String
+	value String
 }

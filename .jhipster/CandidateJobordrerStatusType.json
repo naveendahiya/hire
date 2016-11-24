@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateStatusTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "shortDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "canBeScheduled",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221118",
+    "entityTableName": "candidate_jobordrer_status_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

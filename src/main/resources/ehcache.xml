@@ -65,5 +65,29 @@
         timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="com.datasolution.hire.domain.CandidateJoborder"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CandidateJoborderStatus"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CandidateJoborderStatusHistory"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CandidateJobordrerStatusType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CandidateSource"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CandidateTag"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>

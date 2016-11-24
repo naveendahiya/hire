@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span>Candidate Joborder Status</span> {{vm.candidateJoborderStatus.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Candidate Joborder Status Id</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborderStatus.candidateJoborderStatusId}}</span>
+        </dd>
+        <dt><span>Short Description</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborderStatus.shortDescription}}</span>
+        </dd>
+        <dt><span>Can Be Scheduled</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborderStatus.canBeScheduled}}</span>
+        </dd>
+        <dt><span>Triggers Email</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborderStatus.triggersEmail}}</span>
+        </dd>
+        <dt><span>Is Enabled</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborderStatus.isEnabled}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="candidate-joborder-status-detail.edit({id:vm.candidateJoborderStatus.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,51 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateJoborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "candidateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "joborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateSubmitted",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "ratingValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "addedBy",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221115",
+    "entityTableName": "candidate_joborder",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

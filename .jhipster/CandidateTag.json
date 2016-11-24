@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "candidateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tagId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221120",
+    "entityTableName": "candidate_tag",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

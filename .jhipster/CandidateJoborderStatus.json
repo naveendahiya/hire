@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateJoborderStatusId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "shortDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "canBeScheduled",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "triggersEmail",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isEnabled",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221116",
+    "entityTableName": "candidate_joborder_status",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

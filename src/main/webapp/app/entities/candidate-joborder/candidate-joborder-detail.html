@@ -1,0 +1,59 @@
+
+<div>
+    <h2><span>Candidate Joborder</span> {{vm.candidateJoborder.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Candidate Joborder Id</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.candidateJoborderId}}</span>
+        </dd>
+        <dt><span>Candidate Id</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.candidateId}}</span>
+        </dd>
+        <dt><span>Joborder Id</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.joborderId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.siteId}}</span>
+        </dd>
+        <dt><span>Status</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.status}}</span>
+        </dd>
+        <dt><span>Date Submitted</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.dateSubmitted | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span>Rating Value</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.ratingValue}}</span>
+        </dd>
+        <dt><span>Added By</span></dt>
+        <dd>
+            <span>{{vm.candidateJoborder.addedBy}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="candidate-joborder-detail.edit({id:vm.candidateJoborder.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

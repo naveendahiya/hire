@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateJoborderStatusHistoryId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "candidateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "joborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "statusFrom",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "statusTo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221117",
+    "entityTableName": "candidate_joborder_status_history",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -12,6 +12,12 @@
     <include file="classpath:config/liquibase/changelog/20161124213757_added_entity_CalendarEvent.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124213758_added_entity_CalendarEventType.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124213759_added_entity_Candidate.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221115_added_entity_CandidateJoborder.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221116_added_entity_CandidateJoborderStatus.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221117_added_entity_CandidateJoborderStatusHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221118_added_entity_CandidateJobordrerStatusType.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221119_added_entity_CandidateSource.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221120_added_entity_CandidateTag.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
