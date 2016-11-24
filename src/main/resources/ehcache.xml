@@ -165,5 +165,17 @@
         timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="com.datasolution.hire.domain.HttpLog"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.HttpLogTypes"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Imported"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>

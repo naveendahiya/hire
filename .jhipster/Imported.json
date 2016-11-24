@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "importedId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "moduleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reverted",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "importedErrors",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addedLines",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124221941",
+    "entityTableName": "imported",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

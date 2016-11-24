@@ -1,0 +1,55 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "logId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "remoteAddr",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "httpUserAgent",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "scriptFilename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "requestMethod",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "queryString",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "requestUri",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "scriptName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "logType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124221843",
+    "entityTableName": "http_log",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

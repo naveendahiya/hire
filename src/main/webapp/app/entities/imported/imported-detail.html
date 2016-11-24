@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span>Imported</span> {{vm.imported.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Imported Id</span></dt>
+        <dd>
+            <span>{{vm.imported.importedId}}</span>
+        </dd>
+        <dt><span>Module Name</span></dt>
+        <dd>
+            <span>{{vm.imported.moduleName}}</span>
+        </dd>
+        <dt><span>Reverted</span></dt>
+        <dd>
+            <span>{{vm.imported.reverted}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.imported.siteId}}</span>
+        </dd>
+        <dt><span>Imported Errors</span></dt>
+        <dd>
+            <span>{{vm.imported.importedErrors}}</span>
+        </dd>
+        <dt><span>Added Lines</span></dt>
+        <dd>
+            <span>{{vm.imported.addedLines}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.imported.dateCreated | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="imported-detail.edit({id:vm.imported.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

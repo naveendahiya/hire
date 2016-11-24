@@ -1,0 +1,76 @@
+<div>
+    <h2>Http Logs</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="http-log.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Http Log
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Log Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Remote Addr</span></th>
+                    <th><span>Http User Agent</span></th>
+                    <th><span>Script Filename</span></th>
+                    <th><span>Request Method</span></th>
+                    <th><span>Query String</span></th>
+                    <th><span>Request Uri</span></th>
+                    <th><span>Script Name</span></th>
+                    <th><span>Log Type</span></th>
+                    <th><span>Date</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="httpLog in vm.httpLogs track by httpLog.id">
+                    <td><a ui-sref="http-log-detail({id:httpLog.id})">{{httpLog.id}}</a></td>
+                    <td>{{httpLog.logId}}</td>
+                    <td>{{httpLog.siteId}}</td>
+                    <td>{{httpLog.remoteAddr}}</td>
+                    <td>{{httpLog.httpUserAgent}}</td>
+                    <td>{{httpLog.scriptFilename}}</td>
+                    <td>{{httpLog.requestMethod}}</td>
+                    <td>{{httpLog.queryString}}</td>
+                    <td>{{httpLog.requestUri}}</td>
+                    <td>{{httpLog.scriptName}}</td>
+                    <td>{{httpLog.logType}}</td>
+                    <td>{{httpLog.date | date:'medium'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="http-log-detail({id:httpLog.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="http-log.edit({id:httpLog.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="http-log.delete({id:httpLog.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

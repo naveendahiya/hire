@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "logTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "defaultLogType",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20161124221940",
+    "entityTableName": "http_log_types",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

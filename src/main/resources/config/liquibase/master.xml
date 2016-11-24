@@ -37,6 +37,9 @@
     <include file="classpath:config/liquibase/changelog/20161124221547_added_entity_ExtraFieldSettings.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221548_added_entity_Feedback.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221549_added_entity_History.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221843_added_entity_HttpLog.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221940_added_entity_HttpLogTypes.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221941_added_entity_Imported.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,140 +1,18 @@
-entity Company{
-	companyId Integer
-	siteId Integer
-	billingContact Integer
+entity HttpLogTypes{
+	logTypeId Integer
 	name String
-	address String
-	city String
-	state String
-	zip String
-	phone1 String
-	phone2 String
-	url String
-	keyTechnologies String
-	notes String
-	enteredBy Integer
-	owner Integer
-	dateCreated ZonedDateTime
-	dateModified ZonedDateTime
-	isHot Integer
-	faxNumber String
+	description String
+	defaultLogType Boolean
+}
+entity Imported{
 	importedId Integer
-	defaultCompany Integer
-}
-entity CompanyDepartment{
-	companyDepartmentId Integer
-	name String
-	companyId Integer
+	moduleName String
+	reverted Integer
 	siteId Integer
+	importedErrors String
+	addedLines Integer
 	dateCreated ZonedDateTime
-	createdBy Integer
-}
-entity Contact{
-	contactId Integer
-	companyId Integer
-	siteId Integer
-	lastName String
-	firstName String
-	title String
-	email1 String
-	email2 String
-	phoneWork String
-	phoneCell String
-	phoneOther String
-	address String
-	city String
-	state String
-	zip String
-	isHot Integer
-	notes String
-	enteredBy Integer
-	owner Integer
-	dateCreated ZonedDateTime
-	dateModified ZonedDateTime
-	leftCompany Integer
-	importedId Integer
-	companyDepartmentId Integer
-	reportsTo Integer
-}
-entity DataItemType{
-	dataItemTypeId Integer
-	shortDescription String
-}
-entity EeoEthnicType{
-	eeoEthnicTypeId Integer
-	type String
-}
-entity EeoVeteranType{
-	eeoVeteranTypeId Integer
-	type String
-}
-entity EmailHistory{
-	emailHistoryId Integer
-	fromAddress String
-	recipients String
-	text String
-	userId Integer
-	siteId Integer
-	date ZonedDateTime
-}
-entity EmailTemplate{
-	emailTemplateId Integer
-	text String
-	allowSubstitution Integer
-	siteId Integer
-	tag String
-	title String
-	possibleVariables String
-	disabled Integer
-}
-entity ExtensionStatistics{
-	extensionStatisticsId Integer
-	extension String
-	action String
-	user String
-	date ZonedDateTime
-}
-entity ExtraField{
-	extraFieldId Integer
-	dataItemId Integer
-	fieldName String
-	value String
-	importededId Integer
-	siteId Integer
-	dataItemType Integer
-}
-entity ExtraFieldSettings{
-	extraFieldSettingsId Integer
-	fieldName String
-	importedId Integer
-	siteId Integer
-	dateCreated ZonedDateTime
-	dataItemType Integer
-	extraFieldType Integer
-	extraFieldOptions String
-	position Integer
-}
-entity Feedback{
-	feedbackId Integer
-	userId Integer
-	siteId Integer
-	dateCreated ZonedDateTime
-	subject String
-	replyToAddress String
-	replyToName String
-	feedback String
-	archived Integer
 }
 
-entity History{
-	historyId Integer
-	dataItemType Integer
-	dataItemId Integer
-	theField String
-	previousValue String
-	newValue String
-	description String
-	setDate ZonedDateTime
-	enteredBy Integer
-	siteId Integer
-}
+
+

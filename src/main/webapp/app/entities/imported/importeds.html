@@ -1,0 +1,68 @@
+<div>
+    <h2>Importeds</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="imported.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Imported
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Imported Id</span></th>
+                    <th><span>Module Name</span></th>
+                    <th><span>Reverted</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Imported Errors</span></th>
+                    <th><span>Added Lines</span></th>
+                    <th><span>Date Created</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="imported in vm.importeds track by imported.id">
+                    <td><a ui-sref="imported-detail({id:imported.id})">{{imported.id}}</a></td>
+                    <td>{{imported.importedId}}</td>
+                    <td>{{imported.moduleName}}</td>
+                    <td>{{imported.reverted}}</td>
+                    <td>{{imported.siteId}}</td>
+                    <td>{{imported.importedErrors}}</td>
+                    <td>{{imported.addedLines}}</td>
+                    <td>{{imported.dateCreated | date:'medium'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="imported-detail({id:imported.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="imported.edit({id:imported.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="imported.delete({id:imported.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
