@@ -1,0 +1,78 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCareerPortalQuestionnaireHistoryLabel">Create or edit a Career Portal Questionnaire History</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.careerPortalQuestionnaireHistory.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.careerPortalQuestionnaireHistory.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireHistoryId">Career Portal Questionnaire History Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireHistoryId" id="field_careerPortalQuestionnaireHistoryId"
+                    ng-model="vm.careerPortalQuestionnaireHistory.careerPortalQuestionnaireHistoryId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.careerPortalQuestionnaireHistory.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_candidateId">Candidate Id</label>
+            <input type="number" class="form-control" name="candidateId" id="field_candidateId"
+                    ng-model="vm.careerPortalQuestionnaireHistory.candidateId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_question">Question</label>
+            <input type="text" class="form-control" name="question" id="field_question"
+                    ng-model="vm.careerPortalQuestionnaireHistory.question"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_answer">Answer</label>
+            <input type="text" class="form-control" name="answer" id="field_answer"
+                    ng-model="vm.careerPortalQuestionnaireHistory.answer"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_questionnaireTitle">Questionnaire Title</label>
+            <input type="text" class="form-control" name="questionnaireTitle" id="field_questionnaireTitle"
+                    ng-model="vm.careerPortalQuestionnaireHistory.questionnaireTitle"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_questionnaireDescription">Questionnaire Description</label>
+            <input type="text" class="form-control" name="questionnaireDescription" id="field_questionnaireDescription"
+                    ng-model="vm.careerPortalQuestionnaireHistory.questionnaireDescription"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_date">Date</label>
+                <div class="input-group">
+                    <input id="field_date" type="text" class="form-control" name="date" datetime-picker="{{dateformat}}" ng-model="vm.careerPortalQuestionnaireHistory.date" is-open="vm.datePickerOpenStatus.date"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('date')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

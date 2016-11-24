@@ -1,0 +1,104 @@
+<div>
+    <h2>Contacts</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="contact.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Contact
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Contact Id</span></th>
+                    <th><span>Company Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Last Name</span></th>
+                    <th><span>First Name</span></th>
+                    <th><span>Title</span></th>
+                    <th><span>Email 1</span></th>
+                    <th><span>Email 2</span></th>
+                    <th><span>Phone Work</span></th>
+                    <th><span>Phone Cell</span></th>
+                    <th><span>Phone Other</span></th>
+                    <th><span>Address</span></th>
+                    <th><span>City</span></th>
+                    <th><span>State</span></th>
+                    <th><span>Zip</span></th>
+                    <th><span>Is Hot</span></th>
+                    <th><span>Notes</span></th>
+                    <th><span>Entered By</span></th>
+                    <th><span>Owner</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Date Modified</span></th>
+                    <th><span>Left Company</span></th>
+                    <th><span>Imported Id</span></th>
+                    <th><span>Company Department Id</span></th>
+                    <th><span>Reports To</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="contact in vm.contacts track by contact.id">
+                    <td><a ui-sref="contact-detail({id:contact.id})">{{contact.id}}</a></td>
+                    <td>{{contact.contactId}}</td>
+                    <td>{{contact.companyId}}</td>
+                    <td>{{contact.siteId}}</td>
+                    <td>{{contact.lastName}}</td>
+                    <td>{{contact.firstName}}</td>
+                    <td>{{contact.title}}</td>
+                    <td>{{contact.email1}}</td>
+                    <td>{{contact.email2}}</td>
+                    <td>{{contact.phoneWork}}</td>
+                    <td>{{contact.phoneCell}}</td>
+                    <td>{{contact.phoneOther}}</td>
+                    <td>{{contact.address}}</td>
+                    <td>{{contact.city}}</td>
+                    <td>{{contact.state}}</td>
+                    <td>{{contact.zip}}</td>
+                    <td>{{contact.isHot}}</td>
+                    <td>{{contact.notes}}</td>
+                    <td>{{contact.enteredBy}}</td>
+                    <td>{{contact.owner}}</td>
+                    <td>{{contact.dateCreated | date:'medium'}}</td>
+                    <td>{{contact.dateModified | date:'medium'}}</td>
+                    <td>{{contact.leftCompany}}</td>
+                    <td>{{contact.importedId}}</td>
+                    <td>{{contact.companyDepartmentId}}</td>
+                    <td>{{contact.reportsTo}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="contact-detail({id:contact.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="contact.edit({id:contact.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="contact.delete({id:contact.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

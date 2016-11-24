@@ -1,0 +1,59 @@
+
+<div>
+    <h2><span>History</span> {{vm.history.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>History Id</span></dt>
+        <dd>
+            <span>{{vm.history.historyId}}</span>
+        </dd>
+        <dt><span>Data Item Type</span></dt>
+        <dd>
+            <span>{{vm.history.dataItemType}}</span>
+        </dd>
+        <dt><span>Data Item Id</span></dt>
+        <dd>
+            <span>{{vm.history.dataItemId}}</span>
+        </dd>
+        <dt><span>The Field</span></dt>
+        <dd>
+            <span>{{vm.history.theField}}</span>
+        </dd>
+        <dt><span>Previous Value</span></dt>
+        <dd>
+            <span>{{vm.history.previousValue}}</span>
+        </dd>
+        <dt><span>New Value</span></dt>
+        <dd>
+            <span>{{vm.history.newValue}}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+            <span>{{vm.history.description}}</span>
+        </dd>
+        <dt><span>Set Date</span></dt>
+        <dd>
+            <span>{{vm.history.setDate | date:'medium'}}</span>
+        </dd>
+        <dt><span>Entered By</span></dt>
+        <dd>
+            <span>{{vm.history.enteredBy}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.history.siteId}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="history-detail.edit({id:vm.history.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

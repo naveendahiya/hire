@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span>Extra Field Settings</span> {{vm.extraFieldSettings.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Extra Field Settings Id</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.extraFieldSettingsId}}</span>
+        </dd>
+        <dt><span>Field Name</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.fieldName}}</span>
+        </dd>
+        <dt><span>Imported Id</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.importedId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.siteId}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Data Item Type</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.dataItemType}}</span>
+        </dd>
+        <dt><span>Extra Field Type</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.extraFieldType}}</span>
+        </dd>
+        <dt><span>Extra Field Options</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.extraFieldOptions}}</span>
+        </dd>
+        <dt><span>Position</span></dt>
+        <dd>
+            <span>{{vm.extraFieldSettings.position}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="extra-field-settings-detail.edit({id:vm.extraFieldSettings.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

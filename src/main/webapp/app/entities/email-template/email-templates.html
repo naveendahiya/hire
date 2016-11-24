@@ -1,0 +1,70 @@
+<div>
+    <h2>Email Templates</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="email-template.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Email Template
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Email Template Id</span></th>
+                    <th><span>Text</span></th>
+                    <th><span>Allow Substitution</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Tag</span></th>
+                    <th><span>Title</span></th>
+                    <th><span>Possible Variables</span></th>
+                    <th><span>Disabled</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emailTemplate in vm.emailTemplates track by emailTemplate.id">
+                    <td><a ui-sref="email-template-detail({id:emailTemplate.id})">{{emailTemplate.id}}</a></td>
+                    <td>{{emailTemplate.emailTemplateId}}</td>
+                    <td>{{emailTemplate.text}}</td>
+                    <td>{{emailTemplate.allowSubstitution}}</td>
+                    <td>{{emailTemplate.siteId}}</td>
+                    <td>{{emailTemplate.tag}}</td>
+                    <td>{{emailTemplate.title}}</td>
+                    <td>{{emailTemplate.possibleVariables}}</td>
+                    <td>{{emailTemplate.disabled}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="email-template-detail({id:emailTemplate.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="email-template.edit({id:emailTemplate.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="email-template.delete({id:emailTemplate.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

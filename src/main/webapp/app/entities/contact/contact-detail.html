@@ -1,0 +1,119 @@
+
+<div>
+    <h2><span>Contact</span> {{vm.contact.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Contact Id</span></dt>
+        <dd>
+            <span>{{vm.contact.contactId}}</span>
+        </dd>
+        <dt><span>Company Id</span></dt>
+        <dd>
+            <span>{{vm.contact.companyId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.contact.siteId}}</span>
+        </dd>
+        <dt><span>Last Name</span></dt>
+        <dd>
+            <span>{{vm.contact.lastName}}</span>
+        </dd>
+        <dt><span>First Name</span></dt>
+        <dd>
+            <span>{{vm.contact.firstName}}</span>
+        </dd>
+        <dt><span>Title</span></dt>
+        <dd>
+            <span>{{vm.contact.title}}</span>
+        </dd>
+        <dt><span>Email 1</span></dt>
+        <dd>
+            <span>{{vm.contact.email1}}</span>
+        </dd>
+        <dt><span>Email 2</span></dt>
+        <dd>
+            <span>{{vm.contact.email2}}</span>
+        </dd>
+        <dt><span>Phone Work</span></dt>
+        <dd>
+            <span>{{vm.contact.phoneWork}}</span>
+        </dd>
+        <dt><span>Phone Cell</span></dt>
+        <dd>
+            <span>{{vm.contact.phoneCell}}</span>
+        </dd>
+        <dt><span>Phone Other</span></dt>
+        <dd>
+            <span>{{vm.contact.phoneOther}}</span>
+        </dd>
+        <dt><span>Address</span></dt>
+        <dd>
+            <span>{{vm.contact.address}}</span>
+        </dd>
+        <dt><span>City</span></dt>
+        <dd>
+            <span>{{vm.contact.city}}</span>
+        </dd>
+        <dt><span>State</span></dt>
+        <dd>
+            <span>{{vm.contact.state}}</span>
+        </dd>
+        <dt><span>Zip</span></dt>
+        <dd>
+            <span>{{vm.contact.zip}}</span>
+        </dd>
+        <dt><span>Is Hot</span></dt>
+        <dd>
+            <span>{{vm.contact.isHot}}</span>
+        </dd>
+        <dt><span>Notes</span></dt>
+        <dd>
+            <span>{{vm.contact.notes}}</span>
+        </dd>
+        <dt><span>Entered By</span></dt>
+        <dd>
+            <span>{{vm.contact.enteredBy}}</span>
+        </dd>
+        <dt><span>Owner</span></dt>
+        <dd>
+            <span>{{vm.contact.owner}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.contact.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.contact.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span>Left Company</span></dt>
+        <dd>
+            <span>{{vm.contact.leftCompany}}</span>
+        </dd>
+        <dt><span>Imported Id</span></dt>
+        <dd>
+            <span>{{vm.contact.importedId}}</span>
+        </dd>
+        <dt><span>Company Department Id</span></dt>
+        <dd>
+            <span>{{vm.contact.companyDepartmentId}}</span>
+        </dd>
+        <dt><span>Reports To</span></dt>
+        <dd>
+            <span>{{vm.contact.reportsTo}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="contact-detail.edit({id:vm.contact.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,51 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "historyId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "theField",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "previousValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "newValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "setDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221549",
+    "entityTableName": "history",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

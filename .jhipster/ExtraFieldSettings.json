@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "extraFieldSettingsId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fieldName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "importedId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "extraFieldType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "extraFieldOptions",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "position",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221547",
+    "entityTableName": "extra_field_settings",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

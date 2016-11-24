@@ -89,5 +89,81 @@
         timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="com.datasolution.hire.domain.CareerPortalQuestionnaire"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CareerPortalQuestionnaireAnswer"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CareerPortalQuestionnaireHistory"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CareerPortalQuestionnaireQuestion"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CareerPortalTemplate"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CareerPortalTemplateSite"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Company"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.CompanyDepartment"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Contact"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.DataItemType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.EeoEthnicType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.EeoVeteranType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.EmailHistory"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.EmailTemplate"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.ExtensionStatistics"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.ExtraField"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.ExtraFieldSettings"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Feedback"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.History"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>

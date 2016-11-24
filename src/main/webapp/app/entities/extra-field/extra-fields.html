@@ -1,0 +1,68 @@
+<div>
+    <h2>Extra Fields</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="extra-field.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Extra Field
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Extra Field Id</span></th>
+                    <th><span>Data Item Id</span></th>
+                    <th><span>Field Name</span></th>
+                    <th><span>Value</span></th>
+                    <th><span>Importeded Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Data Item Type</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="extraField in vm.extraFields track by extraField.id">
+                    <td><a ui-sref="extra-field-detail({id:extraField.id})">{{extraField.id}}</a></td>
+                    <td>{{extraField.extraFieldId}}</td>
+                    <td>{{extraField.dataItemId}}</td>
+                    <td>{{extraField.fieldName}}</td>
+                    <td>{{extraField.value}}</td>
+                    <td>{{extraField.importededId}}</td>
+                    <td>{{extraField.siteId}}</td>
+                    <td>{{extraField.dataItemType}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="extra-field-detail({id:extraField.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="extra-field.edit({id:extraField.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="extra-field.delete({id:extraField.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

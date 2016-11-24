@@ -1,0 +1,184 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myContactLabel">Create or edit a Contact</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.contact.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.contact.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_contactId">Contact Id</label>
+            <input type="number" class="form-control" name="contactId" id="field_contactId"
+                    ng-model="vm.contact.contactId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_companyId">Company Id</label>
+            <input type="number" class="form-control" name="companyId" id="field_companyId"
+                    ng-model="vm.contact.companyId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.contact.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lastName">Last Name</label>
+            <input type="text" class="form-control" name="lastName" id="field_lastName"
+                    ng-model="vm.contact.lastName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="field_firstName"
+                    ng-model="vm.contact.firstName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_title">Title</label>
+            <input type="text" class="form-control" name="title" id="field_title"
+                    ng-model="vm.contact.title"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_email1">Email 1</label>
+            <input type="text" class="form-control" name="email1" id="field_email1"
+                    ng-model="vm.contact.email1"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_email2">Email 2</label>
+            <input type="text" class="form-control" name="email2" id="field_email2"
+                    ng-model="vm.contact.email2"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneWork">Phone Work</label>
+            <input type="text" class="form-control" name="phoneWork" id="field_phoneWork"
+                    ng-model="vm.contact.phoneWork"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneCell">Phone Cell</label>
+            <input type="text" class="form-control" name="phoneCell" id="field_phoneCell"
+                    ng-model="vm.contact.phoneCell"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneOther">Phone Other</label>
+            <input type="text" class="form-control" name="phoneOther" id="field_phoneOther"
+                    ng-model="vm.contact.phoneOther"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="vm.contact.address"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.contact.city"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_state">State</label>
+            <input type="text" class="form-control" name="state" id="field_state"
+                    ng-model="vm.contact.state"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_zip">Zip</label>
+            <input type="text" class="form-control" name="zip" id="field_zip"
+                    ng-model="vm.contact.zip"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_isHot">Is Hot</label>
+            <input type="number" class="form-control" name="isHot" id="field_isHot"
+                    ng-model="vm.contact.isHot"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_notes">Notes</label>
+            <input type="text" class="form-control" name="notes" id="field_notes"
+                    ng-model="vm.contact.notes"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_enteredBy">Entered By</label>
+            <input type="number" class="form-control" name="enteredBy" id="field_enteredBy"
+                    ng-model="vm.contact.enteredBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_owner">Owner</label>
+            <input type="number" class="form-control" name="owner" id="field_owner"
+                    ng-model="vm.contact.owner"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateCreated">Date Created</label>
+                <div class="input-group">
+                    <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" datetime-picker="{{dateformat}}" ng-model="vm.contact.dateCreated" is-open="vm.datePickerOpenStatus.dateCreated"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateCreated')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateModified">Date Modified</label>
+                <div class="input-group">
+                    <input id="field_dateModified" type="text" class="form-control" name="dateModified" datetime-picker="{{dateformat}}" ng-model="vm.contact.dateModified" is-open="vm.datePickerOpenStatus.dateModified"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateModified')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_leftCompany">Left Company</label>
+            <input type="number" class="form-control" name="leftCompany" id="field_leftCompany"
+                    ng-model="vm.contact.leftCompany"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_importedId">Imported Id</label>
+            <input type="number" class="form-control" name="importedId" id="field_importedId"
+                    ng-model="vm.contact.importedId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_companyDepartmentId">Company Department Id</label>
+            <input type="number" class="form-control" name="companyDepartmentId" id="field_companyDepartmentId"
+                    ng-model="vm.contact.companyDepartmentId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_reportsTo">Reports To</label>
+            <input type="number" class="form-control" name="reportsTo" id="field_reportsTo"
+                    ng-model="vm.contact.reportsTo"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,72 @@
+<div>
+    <h2>Extra Field Settings</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="extra-field-settings.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Extra Field Settings
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Extra Field Settings Id</span></th>
+                    <th><span>Field Name</span></th>
+                    <th><span>Imported Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Data Item Type</span></th>
+                    <th><span>Extra Field Type</span></th>
+                    <th><span>Extra Field Options</span></th>
+                    <th><span>Position</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="extraFieldSettings in vm.extraFieldSettings track by extraFieldSettings.id">
+                    <td><a ui-sref="extra-field-settings-detail({id:extraFieldSettings.id})">{{extraFieldSettings.id}}</a></td>
+                    <td>{{extraFieldSettings.extraFieldSettingsId}}</td>
+                    <td>{{extraFieldSettings.fieldName}}</td>
+                    <td>{{extraFieldSettings.importedId}}</td>
+                    <td>{{extraFieldSettings.siteId}}</td>
+                    <td>{{extraFieldSettings.dateCreated | date:'medium'}}</td>
+                    <td>{{extraFieldSettings.dataItemType}}</td>
+                    <td>{{extraFieldSettings.extraFieldType}}</td>
+                    <td>{{extraFieldSettings.extraFieldOptions}}</td>
+                    <td>{{extraFieldSettings.position}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="extra-field-settings-detail({id:extraFieldSettings.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="extra-field-settings.edit({id:extraFieldSettings.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="extra-field-settings.delete({id:extraFieldSettings.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

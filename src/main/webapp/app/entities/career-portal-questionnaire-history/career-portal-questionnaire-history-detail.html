@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span>Career Portal Questionnaire History</span> {{vm.careerPortalQuestionnaireHistory.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Career Portal Questionnaire History Id</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.careerPortalQuestionnaireHistoryId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.siteId}}</span>
+        </dd>
+        <dt><span>Candidate Id</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.candidateId}}</span>
+        </dd>
+        <dt><span>Question</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.question}}</span>
+        </dd>
+        <dt><span>Answer</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.answer}}</span>
+        </dd>
+        <dt><span>Questionnaire Title</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.questionnaireTitle}}</span>
+        </dd>
+        <dt><span>Questionnaire Description</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.questionnaireDescription}}</span>
+        </dd>
+        <dt><span>Date</span></dt>
+        <dd>
+            <span>{{vm.careerPortalQuestionnaireHistory.date | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="career-portal-questionnaire-history-detail.edit({id:vm.careerPortalQuestionnaireHistory.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

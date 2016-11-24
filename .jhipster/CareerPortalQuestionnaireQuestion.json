@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "careerPortalQuestionnaireQuestionId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "careerPortalQuestionnaireId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "minimumLength",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "maximumLength",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "requir",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "position",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221308",
+    "entityTableName": "career_portal_questionnaire_question",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

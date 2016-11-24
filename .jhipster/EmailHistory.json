@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "emailHistoryId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fromAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recipients",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124221543",
+    "entityTableName": "email_history",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "careerPortalTemplateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "careerPortalName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "setting",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124221310",
+    "entityTableName": "career_portal_template_site",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

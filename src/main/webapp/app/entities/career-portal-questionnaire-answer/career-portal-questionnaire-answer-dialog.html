@@ -1,0 +1,98 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCareerPortalQuestionnaireAnswerLabel">Create or edit a Career Portal Questionnaire Answer</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.careerPortalQuestionnaireAnswer.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireAnswerId">Career Portal Questionnaire Answer Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireAnswerId" id="field_careerPortalQuestionnaireAnswerId"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.careerPortalQuestionnaireAnswerId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireQuestionId">Career Portal Questionnaire Question Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireQuestionId" id="field_careerPortalQuestionnaireQuestionId"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.careerPortalQuestionnaireQuestionId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireId">Career Portal Questionnaire Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireId" id="field_careerPortalQuestionnaireId"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.careerPortalQuestionnaireId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_text">Text</label>
+            <input type="text" class="form-control" name="text" id="field_text"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.text"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionSource">Action Source</label>
+            <input type="text" class="form-control" name="actionSource" id="field_actionSource"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionSource"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionNotes">Action Notes</label>
+            <input type="text" class="form-control" name="actionNotes" id="field_actionNotes"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionNotes"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionIsHot">Action Is Hot</label>
+            <input type="checkbox" class="form-control" name="actionIsHot" id="field_actionIsHot"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionIsHot"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionIsActive">Action Is Active</label>
+            <input type="checkbox" class="form-control" name="actionIsActive" id="field_actionIsActive"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionIsActive"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionCanRelocate">Action Can Relocate</label>
+            <input type="checkbox" class="form-control" name="actionCanRelocate" id="field_actionCanRelocate"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionCanRelocate"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_actionKeySkills">Action Key Skills</label>
+            <input type="text" class="form-control" name="actionKeySkills" id="field_actionKeySkills"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.actionKeySkills"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_position">Position</label>
+            <input type="number" class="form-control" name="position" id="field_position"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.position"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.careerPortalQuestionnaireAnswer.siteId"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

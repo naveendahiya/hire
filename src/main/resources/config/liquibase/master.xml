@@ -18,6 +18,25 @@
     <include file="classpath:config/liquibase/changelog/20161124221118_added_entity_CandidateJobordrerStatusType.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221119_added_entity_CandidateSource.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221120_added_entity_CandidateTag.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221305_added_entity_CareerPortalQuestionnaire.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221306_added_entity_CareerPortalQuestionnaireAnswer.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221307_added_entity_CareerPortalQuestionnaireHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221308_added_entity_CareerPortalQuestionnaireQuestion.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221309_added_entity_CareerPortalTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221310_added_entity_CareerPortalTemplateSite.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221537_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221538_added_entity_CompanyDepartment.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221539_added_entity_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221540_added_entity_DataItemType.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221541_added_entity_EeoEthnicType.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221542_added_entity_EeoVeteranType.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221543_added_entity_EmailHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221544_added_entity_EmailTemplate.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221545_added_entity_ExtensionStatistics.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221546_added_entity_ExtraField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221547_added_entity_ExtraFieldSettings.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221548_added_entity_Feedback.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124221549_added_entity_History.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

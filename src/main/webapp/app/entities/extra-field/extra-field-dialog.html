@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myExtraFieldLabel">Create or edit a Extra Field</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.extraField.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.extraField.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_extraFieldId">Extra Field Id</label>
+            <input type="number" class="form-control" name="extraFieldId" id="field_extraFieldId"
+                    ng-model="vm.extraField.extraFieldId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataItemId">Data Item Id</label>
+            <input type="number" class="form-control" name="dataItemId" id="field_dataItemId"
+                    ng-model="vm.extraField.dataItemId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_fieldName">Field Name</label>
+            <input type="text" class="form-control" name="fieldName" id="field_fieldName"
+                    ng-model="vm.extraField.fieldName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_value">Value</label>
+            <input type="text" class="form-control" name="value" id="field_value"
+                    ng-model="vm.extraField.value"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_importededId">Importeded Id</label>
+            <input type="number" class="form-control" name="importededId" id="field_importededId"
+                    ng-model="vm.extraField.importededId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.extraField.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataItemType">Data Item Type</label>
+            <input type="number" class="form-control" name="dataItemType" id="field_dataItemType"
+                    ng-model="vm.extraField.dataItemType"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

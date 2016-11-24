@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span>Email Template</span> {{vm.emailTemplate.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Email Template Id</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.emailTemplateId}}</span>
+        </dd>
+        <dt><span>Text</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.text}}</span>
+        </dd>
+        <dt><span>Allow Substitution</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.allowSubstitution}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.siteId}}</span>
+        </dd>
+        <dt><span>Tag</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.tag}}</span>
+        </dd>
+        <dt><span>Title</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.title}}</span>
+        </dd>
+        <dt><span>Possible Variables</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.possibleVariables}}</span>
+        </dd>
+        <dt><span>Disabled</span></dt>
+        <dd>
+            <span>{{vm.emailTemplate.disabled}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="email-template-detail.edit({id:vm.emailTemplate.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

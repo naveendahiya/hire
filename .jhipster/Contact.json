@@ -1,0 +1,111 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "contactId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "companyId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneWork",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneCell",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneOther",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "zip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isHot",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "owner",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "leftCompany",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "importedId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "companyDepartmentId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "reportsTo",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221539",
+    "entityTableName": "contact",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,72 @@
+<div>
+    <h2>Feedbacks</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="feedback.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Feedback
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Feedback Id</span></th>
+                    <th><span>User Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Subject</span></th>
+                    <th><span>Reply To Address</span></th>
+                    <th><span>Reply To Name</span></th>
+                    <th><span>Feedback</span></th>
+                    <th><span>Archived</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="feedback in vm.feedbacks track by feedback.id">
+                    <td><a ui-sref="feedback-detail({id:feedback.id})">{{feedback.id}}</a></td>
+                    <td>{{feedback.feedbackId}}</td>
+                    <td>{{feedback.userId}}</td>
+                    <td>{{feedback.siteId}}</td>
+                    <td>{{feedback.dateCreated | date:'medium'}}</td>
+                    <td>{{feedback.subject}}</td>
+                    <td>{{feedback.replyToAddress}}</td>
+                    <td>{{feedback.replyToName}}</td>
+                    <td>{{feedback.feedback}}</td>
+                    <td>{{feedback.archived}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="feedback-detail({id:feedback.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="feedback.edit({id:feedback.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="feedback.delete({id:feedback.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

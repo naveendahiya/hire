@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span>Career Portal Template</span> {{vm.careerPortalTemplate.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Career Portal Template Id</span></dt>
+        <dd>
+            <span>{{vm.careerPortalTemplate.careerPortalTemplateId}}</span>
+        </dd>
+        <dt><span>Career Portal Name</span></dt>
+        <dd>
+            <span>{{vm.careerPortalTemplate.careerPortalName}}</span>
+        </dd>
+        <dt><span>Setting</span></dt>
+        <dd>
+            <span>{{vm.careerPortalTemplate.setting}}</span>
+        </dd>
+        <dt><span>Value</span></dt>
+        <dd>
+            <span>{{vm.careerPortalTemplate.value}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="career-portal-template-detail.edit({id:vm.careerPortalTemplate.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

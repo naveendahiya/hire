@@ -1,0 +1,90 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myHistoryLabel">Create or edit a History</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.history.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.history.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_historyId">History Id</label>
+            <input type="number" class="form-control" name="historyId" id="field_historyId"
+                    ng-model="vm.history.historyId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataItemType">Data Item Type</label>
+            <input type="number" class="form-control" name="dataItemType" id="field_dataItemType"
+                    ng-model="vm.history.dataItemType"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataItemId">Data Item Id</label>
+            <input type="number" class="form-control" name="dataItemId" id="field_dataItemId"
+                    ng-model="vm.history.dataItemId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_theField">The Field</label>
+            <input type="text" class="form-control" name="theField" id="field_theField"
+                    ng-model="vm.history.theField"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_previousValue">Previous Value</label>
+            <input type="text" class="form-control" name="previousValue" id="field_previousValue"
+                    ng-model="vm.history.previousValue"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_newValue">New Value</label>
+            <input type="text" class="form-control" name="newValue" id="field_newValue"
+                    ng-model="vm.history.newValue"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.history.description"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_setDate">Set Date</label>
+                <div class="input-group">
+                    <input id="field_setDate" type="text" class="form-control" name="setDate" datetime-picker="{{dateformat}}" ng-model="vm.history.setDate" is-open="vm.datePickerOpenStatus.setDate"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('setDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_enteredBy">Entered By</label>
+            <input type="number" class="form-control" name="enteredBy" id="field_enteredBy"
+                    ng-model="vm.history.enteredBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.history.siteId"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

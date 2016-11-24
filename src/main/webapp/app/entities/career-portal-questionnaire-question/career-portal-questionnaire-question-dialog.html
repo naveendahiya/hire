@@ -1,0 +1,80 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCareerPortalQuestionnaireQuestionLabel">Create or edit a Career Portal Questionnaire Question</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.careerPortalQuestionnaireQuestion.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireQuestionId">Career Portal Questionnaire Question Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireQuestionId" id="field_careerPortalQuestionnaireQuestionId"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.careerPortalQuestionnaireQuestionId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_careerPortalQuestionnaireId">Career Portal Questionnaire Id</label>
+            <input type="number" class="form-control" name="careerPortalQuestionnaireId" id="field_careerPortalQuestionnaireId"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.careerPortalQuestionnaireId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_text">Text</label>
+            <input type="text" class="form-control" name="text" id="field_text"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.text"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_minimumLength">Minimum Length</label>
+            <input type="number" class="form-control" name="minimumLength" id="field_minimumLength"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.minimumLength"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_maximumLength">Maximum Length</label>
+            <input type="number" class="form-control" name="maximumLength" id="field_maximumLength"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.maximumLength"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_requir">Requir</label>
+            <input type="checkbox" class="form-control" name="requir" id="field_requir"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.requir"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_position">Position</label>
+            <input type="number" class="form-control" name="position" id="field_position"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.position"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_type">Type</label>
+            <input type="number" class="form-control" name="type" id="field_type"
+                    ng-model="vm.careerPortalQuestionnaireQuestion.type"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

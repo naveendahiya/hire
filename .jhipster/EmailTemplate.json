@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "emailTemplateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "allowSubstitution",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tag",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "possibleVariables",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "disabled",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221544",
+    "entityTableName": "email_template",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

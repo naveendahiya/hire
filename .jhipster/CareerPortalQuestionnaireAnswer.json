@@ -1,0 +1,59 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "careerPortalQuestionnaireAnswerId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "careerPortalQuestionnaireQuestionId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "careerPortalQuestionnaireId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actionSource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actionNotes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actionIsHot",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "actionIsActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "actionCanRelocate",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "actionKeySkills",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "position",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221306",
+    "entityTableName": "career_portal_questionnaire_answer",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

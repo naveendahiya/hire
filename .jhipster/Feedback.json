@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "feedbackId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "subject",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "replyToAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "replyToName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "feedback",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "archived",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124221548",
+    "entityTableName": "feedback",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span>Email History</span> {{vm.emailHistory.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Email History Id</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.emailHistoryId}}</span>
+        </dd>
+        <dt><span>From Address</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.fromAddress}}</span>
+        </dd>
+        <dt><span>Recipients</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.recipients}}</span>
+        </dd>
+        <dt><span>Text</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.text}}</span>
+        </dd>
+        <dt><span>User Id</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.userId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.siteId}}</span>
+        </dd>
+        <dt><span>Date</span></dt>
+        <dd>
+            <span>{{vm.emailHistory.date | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="email-history-detail.edit({id:vm.emailHistory.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

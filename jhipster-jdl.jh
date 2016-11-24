@@ -1,55 +1,140 @@
-entity CareerPortalQuestionnaire{
-	careerPortalQuestionnaireId Integer
+entity Company{
+	companyId Integer
+	siteId Integer
+	billingContact Integer
+	name String
+	address String
+	city String
+	state String
+	zip String
+	phone1 String
+	phone2 String
+	url String
+	keyTechnologies String
+	notes String
+	enteredBy Integer
+	owner Integer
+	dateCreated ZonedDateTime
+	dateModified ZonedDateTime
+	isHot Integer
+	faxNumber String
+	importedId Integer
+	defaultCompany Integer
+}
+entity CompanyDepartment{
+	companyDepartmentId Integer
+	name String
+	companyId Integer
+	siteId Integer
+	dateCreated ZonedDateTime
+	createdBy Integer
+}
+entity Contact{
+	contactId Integer
+	companyId Integer
+	siteId Integer
+	lastName String
+	firstName String
 	title String
-	siteId Integer
-	description String
-	isActive Boolean
+	email1 String
+	email2 String
+	phoneWork String
+	phoneCell String
+	phoneOther String
+	address String
+	city String
+	state String
+	zip String
+	isHot Integer
+	notes String
+	enteredBy Integer
+	owner Integer
+	dateCreated ZonedDateTime
+	dateModified ZonedDateTime
+	leftCompany Integer
+	importedId Integer
+	companyDepartmentId Integer
+	reportsTo Integer
 }
-entity CareerPortalQuestionnaireAnswer{
-	careerPortalQuestionnaireAnswerId Integer
-	careerPortalQuestionnaireQuestionId Integer
-	careerPortalQuestionnaireId Integer
+entity DataItemType{
+	dataItemTypeId Integer
+	shortDescription String
+}
+entity EeoEthnicType{
+	eeoEthnicTypeId Integer
+	type String
+}
+entity EeoVeteranType{
+	eeoVeteranTypeId Integer
+	type String
+}
+entity EmailHistory{
+	emailHistoryId Integer
+	fromAddress String
+	recipients String
 	text String
-	actionSource String
-	actionNotes String
-	actionIsHot Boolean
-	actionIsActive Boolean
-	actionCanRelocate Boolean
-	actionKeySkills String
-	position Integer
+	userId Integer
 	siteId Integer
-}
-entity CareerPortalQuestionnaireHistory{
-	careerPortalQuestionnaireHistoryId Integer
-	siteId Integer
-	candidateId Integer
-	question String
-	answer String
-	questionnaireTitle String
-	questionnaireDescription String
 	date ZonedDateTime
 }
-entity CareerPortalQuestionnaireQuestion{
-	careerPortalQuestionnaireQuestionId Integer
-	careerPortalQuestionnaireId Integer
+entity EmailTemplate{
+	emailTemplateId Integer
 	text String
-	minimumLength Integer
-	maximumLength Integer
-	requir Boolean
+	allowSubstitution Integer
+	siteId Integer
+	tag String
+	title String
+	possibleVariables String
+	disabled Integer
+}
+entity ExtensionStatistics{
+	extensionStatisticsId Integer
+	extension String
+	action String
+	user String
+	date ZonedDateTime
+}
+entity ExtraField{
+	extraFieldId Integer
+	dataItemId Integer
+	fieldName String
+	value String
+	importededId Integer
+	siteId Integer
+	dataItemType Integer
+}
+entity ExtraFieldSettings{
+	extraFieldSettingsId Integer
+	fieldName String
+	importedId Integer
+	siteId Integer
+	dateCreated ZonedDateTime
+	dataItemType Integer
+	extraFieldType Integer
+	extraFieldOptions String
 	position Integer
-	siteId Integer
-	type Integer
 }
-entity CareerPortalTemplate{
-	careerPortalTemplateId Integer
-	careerPortalName String
-	setting String
-	value String
-}
-entity CareerPortalTemplateSite{
-	careerPortalTemplateId Integer
-	careerPortalName String
+entity Feedback{
+	feedbackId Integer
+	userId Integer
 	siteId Integer
-	setting String
-	value String
+	dateCreated ZonedDateTime
+	subject String
+	replyToAddress String
+	replyToName String
+	feedback String
+	archived Integer
+}
+
+entity History{
+	historyId Integer
+	dataItemType Integer
+	dataItemId Integer
+	theField String
+	previousValue String
+	newValue String
+	description String
+	setDate ZonedDateTime
+	enteredBy Integer
+	siteId Integer
 }

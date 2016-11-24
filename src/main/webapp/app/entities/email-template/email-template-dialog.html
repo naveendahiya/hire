@@ -1,0 +1,74 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myEmailTemplateLabel">Create or edit a Email Template</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.emailTemplate.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.emailTemplate.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_emailTemplateId">Email Template Id</label>
+            <input type="number" class="form-control" name="emailTemplateId" id="field_emailTemplateId"
+                    ng-model="vm.emailTemplate.emailTemplateId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_text">Text</label>
+            <input type="text" class="form-control" name="text" id="field_text"
+                    ng-model="vm.emailTemplate.text"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_allowSubstitution">Allow Substitution</label>
+            <input type="number" class="form-control" name="allowSubstitution" id="field_allowSubstitution"
+                    ng-model="vm.emailTemplate.allowSubstitution"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.emailTemplate.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_tag">Tag</label>
+            <input type="text" class="form-control" name="tag" id="field_tag"
+                    ng-model="vm.emailTemplate.tag"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_title">Title</label>
+            <input type="text" class="form-control" name="title" id="field_title"
+                    ng-model="vm.emailTemplate.title"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_possibleVariables">Possible Variables</label>
+            <input type="text" class="form-control" name="possibleVariables" id="field_possibleVariables"
+                    ng-model="vm.emailTemplate.possibleVariables"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_disabled">Disabled</label>
+            <input type="number" class="form-control" name="disabled" id="field_disabled"
+                    ng-model="vm.emailTemplate.disabled"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

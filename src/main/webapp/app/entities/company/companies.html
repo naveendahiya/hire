@@ -1,0 +1,96 @@
+<div>
+    <h2>Companies</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="company.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Company
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Company Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Billing Contact</span></th>
+                    <th><span>Name</span></th>
+                    <th><span>Address</span></th>
+                    <th><span>City</span></th>
+                    <th><span>State</span></th>
+                    <th><span>Zip</span></th>
+                    <th><span>Phone 1</span></th>
+                    <th><span>Phone 2</span></th>
+                    <th><span>Url</span></th>
+                    <th><span>Key Technologies</span></th>
+                    <th><span>Notes</span></th>
+                    <th><span>Entered By</span></th>
+                    <th><span>Owner</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Date Modified</span></th>
+                    <th><span>Is Hot</span></th>
+                    <th><span>Fax Number</span></th>
+                    <th><span>Imported Id</span></th>
+                    <th><span>Default Company</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="company in vm.companies track by company.id">
+                    <td><a ui-sref="company-detail({id:company.id})">{{company.id}}</a></td>
+                    <td>{{company.companyId}}</td>
+                    <td>{{company.siteId}}</td>
+                    <td>{{company.billingContact}}</td>
+                    <td>{{company.name}}</td>
+                    <td>{{company.address}}</td>
+                    <td>{{company.city}}</td>
+                    <td>{{company.state}}</td>
+                    <td>{{company.zip}}</td>
+                    <td>{{company.phone1}}</td>
+                    <td>{{company.phone2}}</td>
+                    <td>{{company.url}}</td>
+                    <td>{{company.keyTechnologies}}</td>
+                    <td>{{company.notes}}</td>
+                    <td>{{company.enteredBy}}</td>
+                    <td>{{company.owner}}</td>
+                    <td>{{company.dateCreated | date:'medium'}}</td>
+                    <td>{{company.dateModified | date:'medium'}}</td>
+                    <td>{{company.isHot}}</td>
+                    <td>{{company.faxNumber}}</td>
+                    <td>{{company.importedId}}</td>
+                    <td>{{company.defaultCompany}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="company-detail({id:company.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="company.edit({id:company.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="company.delete({id:company.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
