@@ -1,0 +1,60 @@
+<div>
+    <h2>Access Levels</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="access-level.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Access Level
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Access Level Id</span></th>
+                    <th><span>Short Description</span></th>
+                    <th><span>Long Description</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="accessLevel in vm.accessLevels track by accessLevel.id">
+                    <td><a ui-sref="access-level-detail({id:accessLevel.id})">{{accessLevel.id}}</a></td>
+                    <td>{{accessLevel.accessLevelId}}</td>
+                    <td>{{accessLevel.shortDescription}}</td>
+                    <td>{{accessLevel.longDescription}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="access-level-detail({id:accessLevel.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="access-level.edit({id:accessLevel.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="access-level.delete({id:accessLevel.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

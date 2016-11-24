@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "activityTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "shortDescription",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124213755",
+    "entityTableName": "activity_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

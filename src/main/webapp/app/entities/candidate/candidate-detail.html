@@ -1,0 +1,163 @@
+
+<div>
+    <h2><span>Candidate</span> {{vm.candidate.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Candidate Id</span></dt>
+        <dd>
+            <span>{{vm.candidate.candidateId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.candidate.siteId}}</span>
+        </dd>
+        <dt><span>Last Name</span></dt>
+        <dd>
+            <span>{{vm.candidate.lastName}}</span>
+        </dd>
+        <dt><span>First Name</span></dt>
+        <dd>
+            <span>{{vm.candidate.firstName}}</span>
+        </dd>
+        <dt><span>Middle Name</span></dt>
+        <dd>
+            <span>{{vm.candidate.middleName}}</span>
+        </dd>
+        <dt><span>Phone Home</span></dt>
+        <dd>
+            <span>{{vm.candidate.phoneHome}}</span>
+        </dd>
+        <dt><span>Phone Cell</span></dt>
+        <dd>
+            <span>{{vm.candidate.phoneCell}}</span>
+        </dd>
+        <dt><span>Phone Work</span></dt>
+        <dd>
+            <span>{{vm.candidate.phoneWork}}</span>
+        </dd>
+        <dt><span>Address</span></dt>
+        <dd>
+            <span>{{vm.candidate.address}}</span>
+        </dd>
+        <dt><span>City</span></dt>
+        <dd>
+            <span>{{vm.candidate.city}}</span>
+        </dd>
+        <dt><span>State</span></dt>
+        <dd>
+            <span>{{vm.candidate.state}}</span>
+        </dd>
+        <dt><span>Zip</span></dt>
+        <dd>
+            <span>{{vm.candidate.zip}}</span>
+        </dd>
+        <dt><span>Source</span></dt>
+        <dd>
+            <span>{{vm.candidate.source}}</span>
+        </dd>
+        <dt><span>Date Available</span></dt>
+        <dd>
+            <span>{{vm.candidate.dateAvailable | date:'medium'}}</span>
+        </dd>
+        <dt><span>Can Relocate</span></dt>
+        <dd>
+            <span>{{vm.candidate.canRelocate}}</span>
+        </dd>
+        <dt><span>Notes</span></dt>
+        <dd>
+            <span>{{vm.candidate.notes}}</span>
+        </dd>
+        <dt><span>Key Skills</span></dt>
+        <dd>
+            <span>{{vm.candidate.keySkills}}</span>
+        </dd>
+        <dt><span>Current Employer</span></dt>
+        <dd>
+            <span>{{vm.candidate.currentEmployer}}</span>
+        </dd>
+        <dt><span>Entered By</span></dt>
+        <dd>
+            <span>{{vm.candidate.enteredBy}}</span>
+        </dd>
+        <dt><span>Owner</span></dt>
+        <dd>
+            <span>{{vm.candidate.owner}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.candidate.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.candidate.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span>Email 1</span></dt>
+        <dd>
+            <span>{{vm.candidate.email1}}</span>
+        </dd>
+        <dt><span>Email 2</span></dt>
+        <dd>
+            <span>{{vm.candidate.email2}}</span>
+        </dd>
+        <dt><span>Web Site</span></dt>
+        <dd>
+            <span>{{vm.candidate.webSite}}</span>
+        </dd>
+        <dt><span>Imported Id</span></dt>
+        <dd>
+            <span>{{vm.candidate.importedId}}</span>
+        </dd>
+        <dt><span>Is Hot</span></dt>
+        <dd>
+            <span>{{vm.candidate.isHot}}</span>
+        </dd>
+        <dt><span>Eeo Ethnic Type Id</span></dt>
+        <dd>
+            <span>{{vm.candidate.eeoEthnicTypeId}}</span>
+        </dd>
+        <dt><span>Eeo Veteran Type Id</span></dt>
+        <dd>
+            <span>{{vm.candidate.eeoVeteranTypeId}}</span>
+        </dd>
+        <dt><span>Eeo Disability Status</span></dt>
+        <dd>
+            <span>{{vm.candidate.eeoDisabilityStatus}}</span>
+        </dd>
+        <dt><span>Eeo Gender</span></dt>
+        <dd>
+            <span>{{vm.candidate.eeoGender}}</span>
+        </dd>
+        <dt><span>Desired Pay</span></dt>
+        <dd>
+            <span>{{vm.candidate.desiredPay}}</span>
+        </dd>
+        <dt><span>Current Pay</span></dt>
+        <dd>
+            <span>{{vm.candidate.currentPay}}</span>
+        </dd>
+        <dt><span>Is Active</span></dt>
+        <dd>
+            <span>{{vm.candidate.isActive}}</span>
+        </dd>
+        <dt><span>Is Admin Hidden</span></dt>
+        <dd>
+            <span>{{vm.candidate.isAdminHidden}}</span>
+        </dd>
+        <dt><span>Best Time To Call</span></dt>
+        <dd>
+            <span>{{vm.candidate.bestTimeToCall}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="candidate-detail.edit({id:vm.candidate.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

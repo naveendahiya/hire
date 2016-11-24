@@ -1,0 +1,155 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "middleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneHome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneCell",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneWork",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "zip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "source",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateAvailable",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "canRelocate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "keySkills",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentEmployer",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "owner",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "email1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "webSite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "importedId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isHot",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "eeoEthnicTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "eeoVeteranTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "eeoDisabilityStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eeoGender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "desiredPay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentPay",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isActive",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isAdminHidden",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "bestTimeToCall",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124213759",
+    "entityTableName": "candidate",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

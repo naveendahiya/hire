@@ -1,0 +1,254 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCandidateLabel">Create or edit a Candidate</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.candidate.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.candidate.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_candidateId">Candidate Id</label>
+            <input type="number" class="form-control" name="candidateId" id="field_candidateId"
+                    ng-model="vm.candidate.candidateId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_siteId">Site Id</label>
+            <input type="number" class="form-control" name="siteId" id="field_siteId"
+                    ng-model="vm.candidate.siteId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lastName">Last Name</label>
+            <input type="text" class="form-control" name="lastName" id="field_lastName"
+                    ng-model="vm.candidate.lastName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="field_firstName"
+                    ng-model="vm.candidate.firstName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_middleName">Middle Name</label>
+            <input type="text" class="form-control" name="middleName" id="field_middleName"
+                    ng-model="vm.candidate.middleName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneHome">Phone Home</label>
+            <input type="text" class="form-control" name="phoneHome" id="field_phoneHome"
+                    ng-model="vm.candidate.phoneHome"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneCell">Phone Cell</label>
+            <input type="text" class="form-control" name="phoneCell" id="field_phoneCell"
+                    ng-model="vm.candidate.phoneCell"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_phoneWork">Phone Work</label>
+            <input type="text" class="form-control" name="phoneWork" id="field_phoneWork"
+                    ng-model="vm.candidate.phoneWork"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="vm.candidate.address"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.candidate.city"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_state">State</label>
+            <input type="text" class="form-control" name="state" id="field_state"
+                    ng-model="vm.candidate.state"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_zip">Zip</label>
+            <input type="text" class="form-control" name="zip" id="field_zip"
+                    ng-model="vm.candidate.zip"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_source">Source</label>
+            <input type="text" class="form-control" name="source" id="field_source"
+                    ng-model="vm.candidate.source"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateAvailable">Date Available</label>
+                <div class="input-group">
+                    <input id="field_dateAvailable" type="text" class="form-control" name="dateAvailable" datetime-picker="{{dateformat}}" ng-model="vm.candidate.dateAvailable" is-open="vm.datePickerOpenStatus.dateAvailable"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateAvailable')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_canRelocate">Can Relocate</label>
+            <input type="number" class="form-control" name="canRelocate" id="field_canRelocate"
+                    ng-model="vm.candidate.canRelocate"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_notes">Notes</label>
+            <input type="text" class="form-control" name="notes" id="field_notes"
+                    ng-model="vm.candidate.notes"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_keySkills">Key Skills</label>
+            <input type="text" class="form-control" name="keySkills" id="field_keySkills"
+                    ng-model="vm.candidate.keySkills"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_currentEmployer">Current Employer</label>
+            <input type="text" class="form-control" name="currentEmployer" id="field_currentEmployer"
+                    ng-model="vm.candidate.currentEmployer"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_enteredBy">Entered By</label>
+            <input type="number" class="form-control" name="enteredBy" id="field_enteredBy"
+                    ng-model="vm.candidate.enteredBy"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_owner">Owner</label>
+            <input type="number" class="form-control" name="owner" id="field_owner"
+                    ng-model="vm.candidate.owner"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateCreated">Date Created</label>
+                <div class="input-group">
+                    <input id="field_dateCreated" type="text" class="form-control" name="dateCreated" datetime-picker="{{dateformat}}" ng-model="vm.candidate.dateCreated" is-open="vm.datePickerOpenStatus.dateCreated"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateCreated')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dateModified">Date Modified</label>
+                <div class="input-group">
+                    <input id="field_dateModified" type="text" class="form-control" name="dateModified" datetime-picker="{{dateformat}}" ng-model="vm.candidate.dateModified" is-open="vm.datePickerOpenStatus.dateModified"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dateModified')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_email1">Email 1</label>
+            <input type="text" class="form-control" name="email1" id="field_email1"
+                    ng-model="vm.candidate.email1"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_email2">Email 2</label>
+            <input type="text" class="form-control" name="email2" id="field_email2"
+                    ng-model="vm.candidate.email2"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_webSite">Web Site</label>
+            <input type="text" class="form-control" name="webSite" id="field_webSite"
+                    ng-model="vm.candidate.webSite"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_importedId">Imported Id</label>
+            <input type="number" class="form-control" name="importedId" id="field_importedId"
+                    ng-model="vm.candidate.importedId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_isHot">Is Hot</label>
+            <input type="number" class="form-control" name="isHot" id="field_isHot"
+                    ng-model="vm.candidate.isHot"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_eeoEthnicTypeId">Eeo Ethnic Type Id</label>
+            <input type="number" class="form-control" name="eeoEthnicTypeId" id="field_eeoEthnicTypeId"
+                    ng-model="vm.candidate.eeoEthnicTypeId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_eeoVeteranTypeId">Eeo Veteran Type Id</label>
+            <input type="number" class="form-control" name="eeoVeteranTypeId" id="field_eeoVeteranTypeId"
+                    ng-model="vm.candidate.eeoVeteranTypeId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_eeoDisabilityStatus">Eeo Disability Status</label>
+            <input type="text" class="form-control" name="eeoDisabilityStatus" id="field_eeoDisabilityStatus"
+                    ng-model="vm.candidate.eeoDisabilityStatus"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_eeoGender">Eeo Gender</label>
+            <input type="text" class="form-control" name="eeoGender" id="field_eeoGender"
+                    ng-model="vm.candidate.eeoGender"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_desiredPay">Desired Pay</label>
+            <input type="text" class="form-control" name="desiredPay" id="field_desiredPay"
+                    ng-model="vm.candidate.desiredPay"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_currentPay">Current Pay</label>
+            <input type="text" class="form-control" name="currentPay" id="field_currentPay"
+                    ng-model="vm.candidate.currentPay"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_isActive">Is Active</label>
+            <input type="number" class="form-control" name="isActive" id="field_isActive"
+                    ng-model="vm.candidate.isActive"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_isAdminHidden">Is Admin Hidden</label>
+            <input type="number" class="form-control" name="isAdminHidden" id="field_isAdminHidden"
+                    ng-model="vm.candidate.isAdminHidden"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_bestTimeToCall">Best Time To Call</label>
+            <input type="text" class="form-control" name="bestTimeToCall" id="field_bestTimeToCall"
+                    ng-model="vm.candidate.bestTimeToCall"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

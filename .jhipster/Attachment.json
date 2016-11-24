@@ -1,0 +1,79 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "attachmentId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "originalFilename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "storedFilename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contentType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "resume",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "profileImage",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "directoryName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "md5Sum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileSizeKb",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "md5SumText",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124213756",
+    "entityTableName": "attachment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

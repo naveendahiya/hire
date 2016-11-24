@@ -1,0 +1,87 @@
+
+<div>
+    <h2><span>Attachment</span> {{vm.attachment.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Attachment Id</span></dt>
+        <dd>
+            <span>{{vm.attachment.attachmentId}}</span>
+        </dd>
+        <dt><span>Data Item Id</span></dt>
+        <dd>
+            <span>{{vm.attachment.dataItemId}}</span>
+        </dd>
+        <dt><span>Data Item Type</span></dt>
+        <dd>
+            <span>{{vm.attachment.dataItemType}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.attachment.siteId}}</span>
+        </dd>
+        <dt><span>Title</span></dt>
+        <dd>
+            <span>{{vm.attachment.title}}</span>
+        </dd>
+        <dt><span>Original Filename</span></dt>
+        <dd>
+            <span>{{vm.attachment.originalFilename}}</span>
+        </dd>
+        <dt><span>Stored Filename</span></dt>
+        <dd>
+            <span>{{vm.attachment.storedFilename}}</span>
+        </dd>
+        <dt><span>Content Type</span></dt>
+        <dd>
+            <span>{{vm.attachment.contentType}}</span>
+        </dd>
+        <dt><span>Resume</span></dt>
+        <dd>
+            <span>{{vm.attachment.resume}}</span>
+        </dd>
+        <dt><span>Text</span></dt>
+        <dd>
+            <span>{{vm.attachment.text}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.attachment.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.attachment.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span>Profile Image</span></dt>
+        <dd>
+            <span>{{vm.attachment.profileImage}}</span>
+        </dd>
+        <dt><span>Directory Name</span></dt>
+        <dd>
+            <span>{{vm.attachment.directoryName}}</span>
+        </dd>
+        <dt><span>Md 5 Sum</span></dt>
+        <dd>
+            <span>{{vm.attachment.md5Sum}}</span>
+        </dd>
+        <dt><span>File Size Kb</span></dt>
+        <dd>
+            <span>{{vm.attachment.fileSizeKb}}</span>
+        </dd>
+        <dt><span>Md 5 Sum Text</span></dt>
+        <dd>
+            <span>{{vm.attachment.md5SumText}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="attachment-detail.edit({id:vm.attachment.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

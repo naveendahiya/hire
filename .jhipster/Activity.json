@@ -1,0 +1,51 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "activityId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "joborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124213754",
+    "entityTableName": "activity",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

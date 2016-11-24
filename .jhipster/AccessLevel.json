@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "accessLevelId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "shortDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "longDescription",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124213753",
+    "entityTableName": "access_level",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

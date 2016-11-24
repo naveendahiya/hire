@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "calendarEventTypeId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "shortDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iconImage",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124213758",
+    "entityTableName": "calendar_event_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

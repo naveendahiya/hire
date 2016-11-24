@@ -1,0 +1,83 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "calendarEventId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "allDay",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "joborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "duration",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "reminderEnabled",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "reminderEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reminderTime",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "publicV",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124213757",
+    "entityTableName": "calendar_event",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
