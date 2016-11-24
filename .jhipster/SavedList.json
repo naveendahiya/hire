@@ -1,0 +1,55 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "savedListId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isDynamic",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "datagridInstance",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parameters",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "numberEntries",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124222441",
+    "entityTableName": "saved_list",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

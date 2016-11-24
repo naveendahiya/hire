@@ -1,0 +1,55 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "queueId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "task",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "args",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "priority",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateTimeout",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateCompleted",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "locked",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "error",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "response",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161124222440",
+    "entityTableName": "queue",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,76 @@
+<div>
+    <h2>Saved Lists</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="saved-list.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Saved List
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Saved List Id</span></th>
+                    <th><span>Description</span></th>
+                    <th><span>Data Item Type</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Is Dynamic</span></th>
+                    <th><span>Datagrid Instance</span></th>
+                    <th><span>Parameters</span></th>
+                    <th><span>Created By</span></th>
+                    <th><span>Number Entries</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Date Modified</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="savedList in vm.savedLists track by savedList.id">
+                    <td><a ui-sref="saved-list-detail({id:savedList.id})">{{savedList.id}}</a></td>
+                    <td>{{savedList.savedListId}}</td>
+                    <td>{{savedList.description}}</td>
+                    <td>{{savedList.dataItemType}}</td>
+                    <td>{{savedList.siteId}}</td>
+                    <td>{{savedList.isDynamic}}</td>
+                    <td>{{savedList.datagridInstance}}</td>
+                    <td>{{savedList.parameters}}</td>
+                    <td>{{savedList.createdBy}}</td>
+                    <td>{{savedList.numberEntries}}</td>
+                    <td>{{savedList.dateCreated | date:'medium'}}</td>
+                    <td>{{savedList.dateModified | date:'medium'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="saved-list-detail({id:savedList.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="saved-list.edit({id:savedList.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="saved-list.delete({id:savedList.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

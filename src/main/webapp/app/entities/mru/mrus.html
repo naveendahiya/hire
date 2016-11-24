@@ -1,0 +1,68 @@
+<div>
+    <h2>Mrus</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="mru.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Mru
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Mru Id</span></th>
+                    <th><span>User Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Data Item Type</span></th>
+                    <th><span>Data Item Text</span></th>
+                    <th><span>Url</span></th>
+                    <th><span>Date Created</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="mru in vm.mrus track by mru.id">
+                    <td><a ui-sref="mru-detail({id:mru.id})">{{mru.id}}</a></td>
+                    <td>{{mru.mruId}}</td>
+                    <td>{{mru.userId}}</td>
+                    <td>{{mru.siteId}}</td>
+                    <td>{{mru.dataItemType}}</td>
+                    <td>{{mru.dataItemText}}</td>
+                    <td>{{mru.url}}</td>
+                    <td>{{mru.dateCreated | date:'medium'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="mru-detail({id:mru.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="mru.edit({id:mru.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="mru.delete({id:mru.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

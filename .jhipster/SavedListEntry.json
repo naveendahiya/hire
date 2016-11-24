@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "savedListEntryId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "savedListId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemType",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataItemId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161124222442",
+    "entityTableName": "saved_list_entry",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

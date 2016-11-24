@@ -1,0 +1,70 @@
+<div>
+    <h2>Saved Searches</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="saved-search.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Saved Search
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Search Id</span></th>
+                    <th><span>Data Item Text</span></th>
+                    <th><span>Url</span></th>
+                    <th><span>Is Custom</span></th>
+                    <th><span>Data Item Type</span></th>
+                    <th><span>User Id</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Date Created</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="savedSearch in vm.savedSearches track by savedSearch.id">
+                    <td><a ui-sref="saved-search-detail({id:savedSearch.id})">{{savedSearch.id}}</a></td>
+                    <td>{{savedSearch.searchId}}</td>
+                    <td>{{savedSearch.dataItemText}}</td>
+                    <td>{{savedSearch.url}}</td>
+                    <td>{{savedSearch.isCustom}}</td>
+                    <td>{{savedSearch.dataItemType}}</td>
+                    <td>{{savedSearch.userId}}</td>
+                    <td>{{savedSearch.siteId}}</td>
+                    <td>{{savedSearch.dateCreated | date:'medium'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="saved-search-detail({id:savedSearch.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="saved-search.edit({id:savedSearch.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="saved-search.delete({id:savedSearch.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

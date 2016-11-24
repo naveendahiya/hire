@@ -1,18 +1,88 @@
-entity HttpLogTypes{
-	logTypeId Integer
-	name String
-	description String
-	defaultLogType Boolean
-}
-entity Imported{
-	importedId Integer
-	moduleName String
-	reverted Integer
+entity Joborder{
+	joborderId Integer
+	recruiter Integer
+	contactId Integer
+	companyId Integer
+	enteredBy Integer
+	owner Integer
 	siteId Integer
-	importedErrors String
-	addedLines Integer
+	clientJobId String
+	title String
+	description String
+	notes String
+	type String
+	duration String
+	rateMax String
+	salary String
+	status String
+	isHot Integer
+	openings Integer
+	city String
+	state String
+	startDate ZonedDateTime
+	dateCreated ZonedDateTime
+	dateModified ZonedDateTime
+	publicV Integer
+	companyDepartmentId Integer
+	isAdminHidden Integer
+	openingsAvailable Integer
+	questionnaireId Integer
+}
+entity ModuleSchema{
+	moduleSchemaId Integer
+	version Integer
+	name String
+}
+entity Mru{
+	mruId Integer
+	userId Integer
+	siteId Integer
+	dataItemType Integer
+	dataItemText String
+	url String
 	dateCreated ZonedDateTime
 }
-
-
-
+entity Queue{
+	queueId Integer
+	siteId Integer
+	task String
+	args String
+	priority Integer
+	dateCreated ZonedDateTime
+	dateTimeout ZonedDateTime
+	dateCompleted ZonedDateTime
+	locked Boolean
+	error Boolean
+	response String
+}
+entity SavedList{
+	savedListId Integer
+	description String
+	dataItemType Integer
+	siteId Integer
+	isDynamic Integer
+	datagridInstance String
+	parameters String
+	createdBy Integer
+	numberEntries Integer
+	dateCreated ZonedDateTime
+	dateModified ZonedDateTime
+}
+entity SavedListEntry{
+	savedListEntryId Integer
+	savedListId Integer
+	dataItemType Integer
+	dataItemId Integer
+	siteId Integer
+	dateCreated ZonedDateTime
+}
+entity SavedSearch{
+	searchId Integer
+	dataItemText String
+	url String
+	isCustom Integer
+	dataItemType Integer
+	userId Integer
+	siteId Integer
+	dateCreated ZonedDateTime
+}

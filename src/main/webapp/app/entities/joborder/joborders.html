@@ -1,0 +1,110 @@
+<div>
+    <h2>Joborders</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="joborder.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Joborder
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Joborder Id</span></th>
+                    <th><span>Recruiter</span></th>
+                    <th><span>Contact Id</span></th>
+                    <th><span>Company Id</span></th>
+                    <th><span>Entered By</span></th>
+                    <th><span>Owner</span></th>
+                    <th><span>Site Id</span></th>
+                    <th><span>Client Job Id</span></th>
+                    <th><span>Title</span></th>
+                    <th><span>Description</span></th>
+                    <th><span>Notes</span></th>
+                    <th><span>Type</span></th>
+                    <th><span>Duration</span></th>
+                    <th><span>Rate Max</span></th>
+                    <th><span>Salary</span></th>
+                    <th><span>Status</span></th>
+                    <th><span>Is Hot</span></th>
+                    <th><span>Openings</span></th>
+                    <th><span>City</span></th>
+                    <th><span>State</span></th>
+                    <th><span>Start Date</span></th>
+                    <th><span>Date Created</span></th>
+                    <th><span>Date Modified</span></th>
+                    <th><span>Public V</span></th>
+                    <th><span>Company Department Id</span></th>
+                    <th><span>Is Admin Hidden</span></th>
+                    <th><span>Openings Available</span></th>
+                    <th><span>Questionnaire Id</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="joborder in vm.joborders track by joborder.id">
+                    <td><a ui-sref="joborder-detail({id:joborder.id})">{{joborder.id}}</a></td>
+                    <td>{{joborder.joborderId}}</td>
+                    <td>{{joborder.recruiter}}</td>
+                    <td>{{joborder.contactId}}</td>
+                    <td>{{joborder.companyId}}</td>
+                    <td>{{joborder.enteredBy}}</td>
+                    <td>{{joborder.owner}}</td>
+                    <td>{{joborder.siteId}}</td>
+                    <td>{{joborder.clientJobId}}</td>
+                    <td>{{joborder.title}}</td>
+                    <td>{{joborder.description}}</td>
+                    <td>{{joborder.notes}}</td>
+                    <td>{{joborder.type}}</td>
+                    <td>{{joborder.duration}}</td>
+                    <td>{{joborder.rateMax}}</td>
+                    <td>{{joborder.salary}}</td>
+                    <td>{{joborder.status}}</td>
+                    <td>{{joborder.isHot}}</td>
+                    <td>{{joborder.openings}}</td>
+                    <td>{{joborder.city}}</td>
+                    <td>{{joborder.state}}</td>
+                    <td>{{joborder.startDate | date:'medium'}}</td>
+                    <td>{{joborder.dateCreated | date:'medium'}}</td>
+                    <td>{{joborder.dateModified | date:'medium'}}</td>
+                    <td>{{joborder.publicV}}</td>
+                    <td>{{joborder.companyDepartmentId}}</td>
+                    <td>{{joborder.isAdminHidden}}</td>
+                    <td>{{joborder.openingsAvailable}}</td>
+                    <td>{{joborder.questionnaireId}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="joborder-detail({id:joborder.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="joborder.edit({id:joborder.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="joborder.delete({id:joborder.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

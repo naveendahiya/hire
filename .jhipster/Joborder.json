@@ -1,0 +1,123 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "joborderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "recruiter",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contactId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "companyId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enteredBy",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "owner",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "siteId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "clientJobId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "duration",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rateMax",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "salary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isHot",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "openings",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "publicV",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "companyDepartmentId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isAdminHidden",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "openingsAvailable",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "questionnaireId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20161124222043",
+    "entityTableName": "joborder",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

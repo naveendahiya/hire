@@ -1,0 +1,63 @@
+
+<div>
+    <h2><span>Saved List</span> {{vm.savedList.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Saved List Id</span></dt>
+        <dd>
+            <span>{{vm.savedList.savedListId}}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+            <span>{{vm.savedList.description}}</span>
+        </dd>
+        <dt><span>Data Item Type</span></dt>
+        <dd>
+            <span>{{vm.savedList.dataItemType}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.savedList.siteId}}</span>
+        </dd>
+        <dt><span>Is Dynamic</span></dt>
+        <dd>
+            <span>{{vm.savedList.isDynamic}}</span>
+        </dd>
+        <dt><span>Datagrid Instance</span></dt>
+        <dd>
+            <span>{{vm.savedList.datagridInstance}}</span>
+        </dd>
+        <dt><span>Parameters</span></dt>
+        <dd>
+            <span>{{vm.savedList.parameters}}</span>
+        </dd>
+        <dt><span>Created By</span></dt>
+        <dd>
+            <span>{{vm.savedList.createdBy}}</span>
+        </dd>
+        <dt><span>Number Entries</span></dt>
+        <dd>
+            <span>{{vm.savedList.numberEntries}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.savedList.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.savedList.dateModified | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="saved-list-detail.edit({id:vm.savedList.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,131 @@
+
+<div>
+    <h2><span>Joborder</span> {{vm.joborder.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Joborder Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.joborderId}}</span>
+        </dd>
+        <dt><span>Recruiter</span></dt>
+        <dd>
+            <span>{{vm.joborder.recruiter}}</span>
+        </dd>
+        <dt><span>Contact Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.contactId}}</span>
+        </dd>
+        <dt><span>Company Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.companyId}}</span>
+        </dd>
+        <dt><span>Entered By</span></dt>
+        <dd>
+            <span>{{vm.joborder.enteredBy}}</span>
+        </dd>
+        <dt><span>Owner</span></dt>
+        <dd>
+            <span>{{vm.joborder.owner}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.siteId}}</span>
+        </dd>
+        <dt><span>Client Job Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.clientJobId}}</span>
+        </dd>
+        <dt><span>Title</span></dt>
+        <dd>
+            <span>{{vm.joborder.title}}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+            <span>{{vm.joborder.description}}</span>
+        </dd>
+        <dt><span>Notes</span></dt>
+        <dd>
+            <span>{{vm.joborder.notes}}</span>
+        </dd>
+        <dt><span>Type</span></dt>
+        <dd>
+            <span>{{vm.joborder.type}}</span>
+        </dd>
+        <dt><span>Duration</span></dt>
+        <dd>
+            <span>{{vm.joborder.duration}}</span>
+        </dd>
+        <dt><span>Rate Max</span></dt>
+        <dd>
+            <span>{{vm.joborder.rateMax}}</span>
+        </dd>
+        <dt><span>Salary</span></dt>
+        <dd>
+            <span>{{vm.joborder.salary}}</span>
+        </dd>
+        <dt><span>Status</span></dt>
+        <dd>
+            <span>{{vm.joborder.status}}</span>
+        </dd>
+        <dt><span>Is Hot</span></dt>
+        <dd>
+            <span>{{vm.joborder.isHot}}</span>
+        </dd>
+        <dt><span>Openings</span></dt>
+        <dd>
+            <span>{{vm.joborder.openings}}</span>
+        </dd>
+        <dt><span>City</span></dt>
+        <dd>
+            <span>{{vm.joborder.city}}</span>
+        </dd>
+        <dt><span>State</span></dt>
+        <dd>
+            <span>{{vm.joborder.state}}</span>
+        </dd>
+        <dt><span>Start Date</span></dt>
+        <dd>
+            <span>{{vm.joborder.startDate | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.joborder.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Modified</span></dt>
+        <dd>
+            <span>{{vm.joborder.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span>Public V</span></dt>
+        <dd>
+            <span>{{vm.joborder.publicV}}</span>
+        </dd>
+        <dt><span>Company Department Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.companyDepartmentId}}</span>
+        </dd>
+        <dt><span>Is Admin Hidden</span></dt>
+        <dd>
+            <span>{{vm.joborder.isAdminHidden}}</span>
+        </dd>
+        <dt><span>Openings Available</span></dt>
+        <dd>
+            <span>{{vm.joborder.openingsAvailable}}</span>
+        </dd>
+        <dt><span>Questionnaire Id</span></dt>
+        <dd>
+            <span>{{vm.joborder.questionnaireId}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="joborder-detail.edit({id:vm.joborder.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

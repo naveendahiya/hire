@@ -177,5 +177,33 @@
         timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="com.datasolution.hire.domain.Joborder"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.ModuleSchema"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Mru"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.Queue"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.SavedList"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.SavedListEntry"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.datasolution.hire.domain.SavedSearch"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>

@@ -1,0 +1,63 @@
+
+<div>
+    <h2><span>Queue</span> {{vm.queue.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Queue Id</span></dt>
+        <dd>
+            <span>{{vm.queue.queueId}}</span>
+        </dd>
+        <dt><span>Site Id</span></dt>
+        <dd>
+            <span>{{vm.queue.siteId}}</span>
+        </dd>
+        <dt><span>Task</span></dt>
+        <dd>
+            <span>{{vm.queue.task}}</span>
+        </dd>
+        <dt><span>Args</span></dt>
+        <dd>
+            <span>{{vm.queue.args}}</span>
+        </dd>
+        <dt><span>Priority</span></dt>
+        <dd>
+            <span>{{vm.queue.priority}}</span>
+        </dd>
+        <dt><span>Date Created</span></dt>
+        <dd>
+            <span>{{vm.queue.dateCreated | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Timeout</span></dt>
+        <dd>
+            <span>{{vm.queue.dateTimeout | date:'medium'}}</span>
+        </dd>
+        <dt><span>Date Completed</span></dt>
+        <dd>
+            <span>{{vm.queue.dateCompleted | date:'medium'}}</span>
+        </dd>
+        <dt><span>Locked</span></dt>
+        <dd>
+            <span>{{vm.queue.locked}}</span>
+        </dd>
+        <dt><span>Error</span></dt>
+        <dd>
+            <span>{{vm.queue.error}}</span>
+        </dd>
+        <dt><span>Response</span></dt>
+        <dd>
+            <span>{{vm.queue.response}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="queue-detail.edit({id:vm.queue.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

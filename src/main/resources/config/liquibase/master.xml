@@ -40,6 +40,13 @@
     <include file="classpath:config/liquibase/changelog/20161124221843_added_entity_HttpLog.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221940_added_entity_HttpLogTypes.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161124221941_added_entity_Imported.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222043_added_entity_Joborder.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222258_added_entity_ModuleSchema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222356_added_entity_Mru.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222440_added_entity_Queue.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222441_added_entity_SavedList.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222442_added_entity_SavedListEntry.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161124222443_added_entity_SavedSearch.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
